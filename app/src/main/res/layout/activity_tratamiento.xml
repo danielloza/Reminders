@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TratamientoActivity" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Programar Recordatorios de Tratamientos"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textColor="@color/colorTitleMed"
+        android:textSize="11pt" />
+
+    <ImageView
+        android:id="@+id/ivTratamiento"
+        android:layout_width="103dp"
+        android:layout_height="114dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/entregaadomicilio" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre del tratamiento"
+            android:id="@+id/etTratamiento" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre del Doctor"
+            android:id="@+id/etNomDoc" />
+
+        <EditText
+            android:id="@+id/etInicioCalendario"
+            android:hint="Fecha inicio del tratamiento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:focusable="false"
+            android:clickable="true"
+            android:maxLines="1" />
+
+        <EditText
+            android:id="@+id/etFinCalendario"
+            android:hint="Fecha fin del tratamiento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:focusable="false"
+            android:clickable="true"
+            android:maxLines="1" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+            <EditText
+                android:id="@+id/et_mostrar_hora_picker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:clickable="false"
+                android:longClickable="false"
+                android:focusableInTouchMode="false"
+                android:ems="10"
+                android:hint="@string/formato_hora"
+                android:inputType="time"
+                app:layout_constraintLeft_toLeftOf="parent"
+                tools:ignore="MissingConstraints" />
+
+        <ImageButton
+            android:id="@+id/ib_obtener_hora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/relojdepared"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintLeft_toRightOf="@+id/et_mostrar_hora_picker"
+            android:layout_marginStart="8dp"
+            app:layout_constraintHorizontal_bias="0.504"
+            tools:ignore="ContentDescription,MissingConstraints" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Guardar recordatorio"
+                android:background="#0a5675"
+                android:textColor="@android:color/white"
+                android:id="@+id/btnGuardarRT" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>
