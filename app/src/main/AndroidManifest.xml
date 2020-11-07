@@ -9,11 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
+        <activity android:name=".TratamientoActivity"></activity>
         <activity android:name=".view.WelcomeActivity" />
-        <activity android:name=".MedicamentoActivity"/>
+        <activity android:name=".MedicamentoActivity" />
         <activity
-            android:name=".TratamientoActivity"
+            android:name=".MenuPacienteActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme">
             <intent-filter>
