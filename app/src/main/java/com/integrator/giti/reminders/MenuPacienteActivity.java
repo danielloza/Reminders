@@ -36,6 +36,10 @@ public class MenuPacienteActivity extends AppCompatActivity {
                             Toast.makeText(MenuPacienteActivity.this,"" + arrayName[i], Toast.LENGTH_LONG).show();
                             Intent intent = new Intent(MenuPacienteActivity.this, MedicamentoActivity.class);
                             startActivity(intent);
+                        }else if (i == 2){
+                            Toast.makeText(MenuPacienteActivity.this,"" + arrayName[i], Toast.LENGTH_LONG).show();
+                            Intent intent = new Intent(MenuPacienteActivity.this, RecordatorioActivity.class);
+                            startActivity(intent);
                         }else if (i == 3){
                             Toast.makeText(MenuPacienteActivity.this,"" + arrayName[i], Toast.LENGTH_LONG).show();
                             Intent intent = new Intent(MenuPacienteActivity.this, TratamientoActivity.class);
