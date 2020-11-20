@@ -31,4 +31,9 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
     //menu paciente
     implementation 'com.github.Hitomis:CircleMenu:v1.1.0'
+
+    //retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'com.google.code.gson:gson:2.3.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
 }
