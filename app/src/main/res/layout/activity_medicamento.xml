@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="@dimen/extra_big_padding"
     tools:context=".MedicamentoActivity" >
 
     <TextView
@@ -21,7 +22,7 @@
         android:layout_width="103dp"
         android:layout_height="114dp"
         android:layout_gravity="center"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/simbolocaduceo" />
@@ -30,6 +31,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Nombre del paciente"
+        android:layout_marginTop="30dp"
         android:id="@+id/etPaciente" />
 
     <EditText
@@ -48,8 +50,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="onClick"
+        android:layout_marginTop="20dp"
         android:text="Seleccione la foto del medicamento"
-        android:background="#0a5675"
+        android:background="@drawable/shape_button_curved"
         android:textColor="@android:color/white"
         android:id="@+id/btnCargarImg" />
 
@@ -58,7 +61,7 @@
         android:layout_width="103dp"
         android:layout_height="114dp"
         android:layout_gravity="center"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/pastillas" />
@@ -67,8 +70,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Guardar medicamento"
-        android:background="#0a5675"
+        android:background="@drawable/shape_button_curved"
         android:textColor="@android:color/white"
+        android:layout_marginTop="20dp"
         android:id="@+id/btnGuardar"
         android:onClick="onClickMed" />
 
@@ -78,7 +82,6 @@
         android:textSize="15pt"
         android:textColor="@android:color/holo_red_dark"
         android:id="@+id/tvGuardar" />
-
 
 
 </LinearLayout>

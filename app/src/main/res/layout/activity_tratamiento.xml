@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="@dimen/extra_big_padding"
     tools:context=".TratamientoActivity" >
 
     <TextView
@@ -33,18 +34,21 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Nombre del tratamiento"
+            android:layout_marginTop="10dp"
             android:id="@+id/etTratamiento" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Nombre del Doctor"
+            android:layout_marginTop="10dp"
             android:id="@+id/etNomDoc" />
 
         <EditText
@@ -53,6 +57,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="date"
+            android:layout_marginTop="10dp"
             android:focusable="false"
             android:clickable="true"
             android:maxLines="1" />
@@ -63,13 +68,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="date"
+            android:layout_marginTop="10dp"
             android:focusable="false"
             android:clickable="true"
             android:maxLines="1" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" >
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
 
             <EditText
                 android:id="@+id/et_mostrar_hora_picker"
@@ -79,7 +86,7 @@
                 android:clickable="false"
                 android:longClickable="false"
                 android:focusableInTouchMode="false"
-                android:ems="10"
+                android:ems="13"
                 android:hint="@string/formato_hora"
                 android:inputType="time"
                 app:layout_constraintLeft_toLeftOf="parent"
@@ -103,7 +110,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Guardar recordatorio"
-                android:background="#0a5675"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/shape_button_curved"
                 android:textColor="@android:color/white"
                 android:id="@+id/btnGuardarRT" />
 

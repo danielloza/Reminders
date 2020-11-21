@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="@dimen/extra_big_padding"
     tools:context=".RecordatorioActivity" >
 
     <TextView
@@ -38,6 +39,7 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:hint="Nombre del recordatorio"
                 android:id="@+id/etRecordatorio" />
 
@@ -47,6 +49,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="date"
+                android:layout_marginTop="10dp"
                 android:focusable="false"
                 android:clickable="true"
                 android:maxLines="1" />
@@ -58,12 +61,14 @@
                 android:layout_height="wrap_content"
                 android:inputType="date"
                 android:focusable="false"
+                android:layout_marginTop="10dp"
                 android:clickable="true"
                 android:maxLines="1" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" >
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
 
                 <EditText
                     android:id="@+id/et_mostrar_hora_picker"
@@ -73,7 +78,7 @@
                     android:clickable="false"
                     android:longClickable="false"
                     android:focusableInTouchMode="false"
-                    android:ems="10"
+                    android:ems="13"
                     android:hint="@string/formato_hora"
                     android:inputType="time"
                     app:layout_constraintLeft_toLeftOf="parent"
@@ -98,13 +103,15 @@
                 android:layout_height="wrap_content"
                 android:hint="Indicar la dosis"
                 android:inputType="numberDecimal"
+                android:layout_marginTop="10dp"
                 android:id="@+id/etDosis" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Guardar recordatorio"
-                android:background="#0a5675"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/shape_button_curved"
                 android:textColor="@android:color/white"
                 android:id="@+id/btnGuardarRM" />
 

@@ -3,5 +3,8 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#cecfd0</color>
     <color name="colorAccent">#03DAC5</color>
-    <color name="colorTitleMed">#1a92c2</color>"
+    <color name="colorTitleMed">#1a92c2</color>
+    <color name="color_blue_dark">#104d81</color>
+    <color name="color_green">#469849</color>
+    <color name="white">@android:color/white</color>
 </resources>
