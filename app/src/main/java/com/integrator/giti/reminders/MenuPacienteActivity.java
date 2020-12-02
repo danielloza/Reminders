@@ -9,6 +9,7 @@ import android.widget.Toast;
 
 import com.hitomi.cmlibrary.CircleMenu;
 import com.hitomi.cmlibrary.OnMenuSelectedListener;
+import com.integrator.giti.reminders.view.RegisterActivity;
 
 public class MenuPacienteActivity extends AppCompatActivity {
 
@@ -36,6 +37,10 @@ public class MenuPacienteActivity extends AppCompatActivity {
                             Toast.makeText(MenuPacienteActivity.this,"" + arrayName[i], Toast.LENGTH_LONG).show();
                             Intent intent = new Intent(MenuPacienteActivity.this, MedicamentoActivity.class);
                             startActivity(intent);
+                        }else if (i == 1){
+                            Toast.makeText(MenuPacienteActivity.this,"" + arrayName[i], Toast.LENGTH_LONG).show();
+                            Intent intent = new Intent(MenuPacienteActivity.this, RegisterActivity.class);
+                            startActivity(intent);
                         }else if (i == 2){
                             Toast.makeText(MenuPacienteActivity.this,"" + arrayName[i], Toast.LENGTH_LONG).show();
                             Intent intent = new Intent(MenuPacienteActivity.this, RecordatorioActivity.class);
@@ -43,6 +48,14 @@ public class MenuPacienteActivity extends AppCompatActivity {
                         }else if (i == 3){
                             Toast.makeText(MenuPacienteActivity.this,"" + arrayName[i], Toast.LENGTH_LONG).show();
                             Intent intent = new Intent(MenuPacienteActivity.this, TratamientoActivity.class);
+                            startActivity(intent);
+                        }else if (i == 4) {
+                            Toast.makeText(MenuPacienteActivity.this, "" + arrayName[i], Toast.LENGTH_LONG).show();
+                            Intent intent = new Intent(MenuPacienteActivity.this, CitasActivity.class);
+                            startActivity(intent);
+                        }else if (i == 5) {
+                            Toast.makeText(MenuPacienteActivity.this, "" + arrayName[i], Toast.LENGTH_LONG).show();
+                            Intent intent = new Intent(MenuPacienteActivity.this, InformacionActivity.class);
                             startActivity(intent);
                         }
 
